@@ -210,7 +210,7 @@ if (posiQ === "HTML") {
       numb: 11,
       question:
         "Which CSS property is used to control the spacing between lines of text?",
-      answer: "A.  <link rel='stylesheet' href='style.css'",
+      answer: "A.  line-height",
       options: [
         "A.  line-height",
         "B.  letter-spacing",

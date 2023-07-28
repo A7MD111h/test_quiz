@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://kit.fontawesome.com/64d58efce2.js"crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/log_in/login.css" /> -->
+    <title>Quiz Page</title>
+
+    <link rel="stylesheet" href="Result.css">
+</head>
+<body>
+    <div class="containershow">
+        
+    <button id="show-answers-btn" onclick="showUserAnswers()"class="butn btn">Show answers</button>
+    
+    <!-- Add the table to display quiz questions and options here -->
+    <br />
+    <!-- Results table to display user's answers and correctness -->
+    <table id="results-table">
+        <!-- Table header for results -->
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>User's Answer</th>
+                <th>Correct Answer</th>
+                <th>Result</th>
+            </tr>
+
+        </thead>
+        <!-- Table body will be populated dynamically using JavaScript -->
+        <tbody id="Tbody"></tbody>
+    </table>
+    </div>
+    <a href="/index.html"> <button id="home" onclick=""class="go_home">Go Home</button></a>
+    
+  
+</body>
+<script src="Result.js"></script>
+
+</html>
