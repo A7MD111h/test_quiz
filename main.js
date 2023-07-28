@@ -37,7 +37,7 @@ if(!isLogedIn) {
   startBtn.removeEventListener("click", showLogin);
   startBtn.textContent = "Login to start!";
   startBtn.addEventListener("click", () => {
-    window.location.href = "log_in/login.html";
+    window.location.href = "./login/login.html";
   })
 }else{
   startBtn.addEventListener("click", showLogin);
@@ -488,14 +488,11 @@ function showQuestions(index) {
   let questionText = document.querySelector(".question-text");
   console.log(questions[0]);
   questionText.textContent = `${countQt++}.${questions[index].question}`;
-  const  questionA = "1."
-  const  questionB = "2."
-  const  questionC = "3."
-  const  questionD = "4."
-  let optionTag = `<div class="option">${questionA}${questions[index].options[0]}</div>
-                    <div class="option">${questionB}${questions[index].options[1]}</div>
-                    <div class="option">${questionC}${questions[index].options[2]}</div>
-                    <div class="option">${questionD}${questions[index].options[3]}</div>`;
+  
+  let optionTag = `<div class="option">${questions[index].options[0]}</div>
+                    <div class="option">${questions[index].options[1]}</div>
+                    <div class="option">${questions[index].options[2]}</div>
+                    <div class="option">${questions[index].options[3]}</div>`;
 
   optionList.innerHTML = optionTag;
   let option = document.querySelectorAll(".option");
