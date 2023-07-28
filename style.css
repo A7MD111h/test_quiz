@@ -570,3 +570,7 @@ body {
   
     /* Adjust other styles for extra-large devices as needed */
   }
+ 
+  #btn_logout{
+    cursor: pointer !important;
+  }

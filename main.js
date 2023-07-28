@@ -488,11 +488,14 @@ function showQuestions(index) {
   let questionText = document.querySelector(".question-text");
   console.log(questions[0]);
   questionText.textContent = `${countQt++}.${questions[index].question}`;
-
-  let optionTag = `<div class="option">${questions[index].options[0]}</div>
-                    <div class="option">${questions[index].options[1]}</div>
-                    <div class="option">${questions[index].options[2]}</div>
-                    <div class="option">${questions[index].options[3]}</div>`;
+  const  questionA = "1."
+  const  questionB = "2."
+  const  questionC = "3."
+  const  questionD = "4."
+  let optionTag = `<div class="option">${questionA}${questions[index].options[0]}</div>
+                    <div class="option">${questionB}${questions[index].options[1]}</div>
+                    <div class="option">${questionc}${questions[index].options[2]}</div>
+                    <div class="option">${questionD}${questions[index].options[3]}</div>`;
 
   optionList.innerHTML = optionTag;
   let option = document.querySelectorAll(".option");
