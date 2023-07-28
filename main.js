@@ -494,7 +494,7 @@ function showQuestions(index) {
   const  questionD = "4."
   let optionTag = `<div class="option">${questionA}${questions[index].options[0]}</div>
                     <div class="option">${questionB}${questions[index].options[1]}</div>
-                    <div class="option">${questionc}${questions[index].options[2]}</div>
+                    <div class="option">${questionC}${questions[index].options[2]}</div>
                     <div class="option">${questionD}${questions[index].options[3]}</div>`;
 
   optionList.innerHTML = optionTag;
