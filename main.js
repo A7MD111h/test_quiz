@@ -37,7 +37,7 @@ if(!isLogedIn) {
   startBtn.removeEventListener("click", showLogin);
   startBtn.textContent = "Login to start!";
   startBtn.addEventListener("click", () => {
-    window.location.href = "./login/login.html";
+    window.location.href = "login/login.html";
   })
 }else{
   startBtn.addEventListener("click", showLogin);
