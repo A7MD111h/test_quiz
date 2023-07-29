@@ -538,8 +538,8 @@ body {
          margin-top: 10px; 
     }
 
-    .question-text {
-        font-size: 18px; 
+    .question-text h2 {
+        font-size: 5px; 
     }
 
     .option-list .option {
