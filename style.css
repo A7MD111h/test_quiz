@@ -537,10 +537,9 @@ body {
     .quiz-header .header-score {
          margin-top: 10px; 
     }
-
-    .question-text {
-        font-size: 5px; 
-        font-weight: 100;
+    .quiz-box .question-text {
+        font-size: 15px !important; 
+        font-weight: 100px !important;
     }
 
     .option-list .option {

@@ -442,7 +442,7 @@ input.wrong::placeholder{
 
   .container.sign-up-mode:before {
     margin-top: 10px;
-    bottom: 28%;
-    left: 50%;
+    /* bottom: 28%; */
+    left: 40%;
   }
 }
