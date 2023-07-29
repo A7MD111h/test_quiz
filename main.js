@@ -25,7 +25,6 @@ let userData = JSON.parse(
 
 let welcomeName;
 let posiQ;
-// let isLogedIn = JSON.parse(localStorage.isLogedIn);
 let isLogedIn = JSON.parse(localStorage.getItem('isLogedIn'));
 // console.log(isLogedIn)
 
@@ -50,7 +49,7 @@ if(localStorage.emailInUse){
     userData = userData[0];
     posiQ = userData.position;
     welcomeName = userData.username;
-    console.log(welcomeName);
+    // console.log(welcomeName);
     homeUserName.textContent =`Welcome ${userData.username}`
   }
 }
@@ -66,7 +65,7 @@ btn_logout.addEventListener("click", (e) => {
   check();
 });
 function check(){
-  console.log(12312)
+  // console.log(12312)
   if (isLogedIn) {
     // show log out hide log in
     btn_login.style.display = "none";
