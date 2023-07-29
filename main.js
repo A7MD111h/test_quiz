@@ -12,7 +12,6 @@ let btn_logout = document.getElementById("btn_logout");
 let nextBtn = document.querySelector(".next-btn");
 let btn_login = document.querySelector("#btn_login");
 let homeUserName = document.querySelector("#homeUserName");
-let navbar = document.querySelector(".na_0");
 
 //  homeUserName = localStorage.getItem("useDate",getItem(useDate))
 // let welcomeName = JSON.parse(localStorage.getItem("useDate"))
@@ -20,12 +19,13 @@ let navbar = document.querySelector(".na_0");
 
 
 var quizshow;
-let userData = JSON.parse(localStorage.getItem("userData") ? localStorage.getItem("userData") : "[]");
+let userData = JSON.parse(
+  localStorage.getItem("userData") ? localStorage.getItem("userData") : "[]"
+);
 
 let welcomeName;
 let posiQ;
 let isLogedIn = JSON.parse(localStorage.getItem('isLogedIn'));
-  
 // console.log(isLogedIn)
 
 if (isLogedIn == null || isLogedIn == undefined) {
@@ -49,10 +49,8 @@ if(localStorage.emailInUse){
     userData = userData[0];
     posiQ = userData.position;
     welcomeName = userData.username;
-    console.log(welcomeName);
+    // console.log(welcomeName);
     homeUserName.textContent =`Welcome ${userData.username}`
-    startBtn.textContent = "Start Quiz";
-    
   }
 }
 
@@ -67,7 +65,7 @@ btn_logout.addEventListener("click", (e) => {
   check();
 });
 function check(){
-  console.log(12312)
+  // console.log(12312)
   if (isLogedIn) {
     // show log out hide log in
     btn_login.style.display = "none";
@@ -212,7 +210,7 @@ if (posiQ === "HTML") {
       numb: 11,
       question:
         "Which CSS property is used to control the spacing between lines of text?",
-      answer: "A.  <link rel='stylesheet' href='style.css'",
+      answer: "A.  line-height",
       options: [
         "A.  line-height",
         "B.  letter-spacing",
@@ -432,7 +430,7 @@ continueBtn.onclick = () => {
   popupInfo.classList.remove("active");
   main.classList.remove("active");
   quizBox.classList.add("active");
-  navbar.style.display = "none";
+
   showQuestions(questionCount);
   questionCounter(1);
   startCountdown();
@@ -490,7 +488,7 @@ function showQuestions(index) {
   let questionText = document.querySelector(".question-text");
   console.log(questions[0]);
   questionText.textContent = `${countQt++}.${questions[index].question}`;
-
+  
   let optionTag = `<div class="option">${questions[index].options[0]}</div>
                     <div class="option">${questions[index].options[1]}</div>
                     <div class="option">${questions[index].options[2]}</div>
