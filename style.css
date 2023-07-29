@@ -513,7 +513,6 @@ body {
         justify-content: center; 
         padding: 10px; 
         overflow: hidden; 
-        
     }
     
     .quiz-box {
@@ -521,7 +520,6 @@ body {
         max-width: 400px; 
         font-size: 14px; 
         padding: 15px; 
-        overflow:auto;
     }  
     .quiz-box.active {
         width: 95%; 
@@ -543,7 +541,6 @@ body {
     .question-text {
         font-size: 5px; 
         font-weight: 100;
-        overflow:auto;
     }
 
     .option-list .option {
